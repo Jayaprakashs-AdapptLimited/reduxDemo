@@ -1,0 +1,1 @@
+export {BuyBike} from '../redux/bike/bikeAction'

@@ -1,12 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 import BikeContainer from './components/BikeContainer';
+import {Provider} from 'react-redux';
+import store from './redux/store';
+import HooksBikeContainer from './components/hooksBikeContainer';
 
 function App() {
   return (
+    <Provider store={store}> 
     <div className="App">
-      <BikeContainer />
+      <HooksBikeContainer />
+      <BikeContainer />   
     </div>
+    </Provider>
   );
 }
 
